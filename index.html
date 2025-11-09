@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintoniza tu Mente</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+      background: linear-gradient(45deg, #4a148c, #2196f3, #00acc1);
+      background-size: 600% 600%;
+      animation: gradientBG 9s ease infinite;
+      color: #fff;
+      scroll-behavior: smooth;
+      display: flex;
+    }
+    nav {
+      width: 220px;
+      background-color: rgba(106, 27, 154, 0.9);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+    }
+    nav h3 {
+      color: #aee6f8;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      color: #aee6f8;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(174, 230, 248, 0.2);
+    }
+    main {
+      margin-left: 240px;
+      flex: 1;
+      padding: 20px;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      margin: 0 auto 40px;
+      max-width: 1000px;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+    header {
+      background-color: rgba(142, 36, 170, 0.85);
+      text-align: center;
+    }
+    header h1 {
+      color: #aee6f8;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    h2 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "🌟 ";
+    }
+    a {
+      color: #aee6f8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(106, 27, 154, 0.85);
+      color: #aee6f8;
+    }
+    .imagen-contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .imagen-contenedor img {
+      width: 250px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 4px solid #aee6f8;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+    }
+    .video-contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.video-contenedor iframe {
+  width: 420px;
+  height: 240px;
+  border-radius: 12px;
+  border: 4px solid #aee6f8;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+.sin-estrella::before {
+  content: "";
+}
+
+.sangrado {
+  margin-left: 40px; /* puedes cambiar el número a 80px si lo quieres más lejos */
+  text-indent: 0; /* por si acaso había una sangría previa */
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h3>Menú</h3>
+    <a href="#inicio">Inicio</a>
+    <a href="#tips">Tips</a>
+    <a href="#herramientas">Herramientas</a>
+    <a href="#contacto">Contáctanos</a>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Sintoniza tu Mente</h1>
+      <p>Tu mente, tu poder. Vibra alto.</p>
+    </header>
+
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>
+        Esta página web fue creada con el objetivo de promover el bienestar emocional en jóvenes desde los 3 hasta los 17 años.
+        Aquí se ofrecen estrategias, tips y herramientas para fortalecer la salud mental dentro y fuera del entorno escolar.
+      </p>
+      <p>
+        La metodología se basa en la participación activa, el trabajo en grupo, la expresión artística y la reflexión personal. Además, se invita a personas adultas a conocer y apoyar esta iniciativa que busca prevenir crisis emocionales y fortalecer la autoestima juvenil.
+      </p>
+      <div class="imagen-contenedor">
+        <img src="imagenes/1.jpg" alt="Bienestar Mental">
+        <img src="imagenes/2.jpg" alt="Juventud Feliz">
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Tips</h2>
+        <ul>
+          <li><strong>Mi diario emocional:</strong>
+            <p class="sangrado">Escribe cada día cómo te sentiste y qué te ayudó a mejorar tu ánimo.</p>
+            <p class="sangrado">Te servirá para conocerte mejor y entender tus emociones</p>
+
+          <li><strong>Carta a mi yo del futuro:</strong>
+
+            <p class="sangrado">Escribe una carta para ti mismo dentro de seis meses contando cómo te sientes hoy y qué esperas lograr.</p>
+            <p class="sangrado">Te ayudará a reflexionar sobre tus cambios y metas emocionales.</p>
+
+          <li><strong>Collage de mis emociones:</strong>
+            <p class="sangrado">Usa dibujos, recortes o imágenes para representar cómo te sientes últimamente.</p>
+            <p class="sangrado">Es una forma divertida de expresar lo que llevas dentro.</p>
+
+          <li><strong>Reto “Palabra positiva”:</strong>
+            <p class="sangrado">Cada día elige una palabra bonita (como “paz”, “esperanza” o “confianza”) y explica por qué la escogiste.</p>
+            <p class="sangrado">Te ayudará a mantener pensamientos alegres y optimistas.</p>
+
+        </ul>
+      
+      <div class="imagen-contenedor">
+        <img src="imagenes/4.png" alt="Actividades">
+        <img src="imagenes/3.avif" alt="Grupo de Jóvenes">
+      </div>
+    </section>
+
+    <section id="herramientas">
+      <h2>Herramientas</h2>
+      <ul>
+        <li>Diario emocional digital o en formato físico</li>
+        <li>Taller musical descargable con ejercicios de relajación</li>
+        <li>Guía práctica de primeros auxilios emocionales</li>
+        <li>Playlist con canciones para mejorar el estado de ánimo</li>
+        <li>Videos y podcasts sobre salud mental dirigidos a jóvenes y padres</li>
+      </ul>
+      <div class="imagen-contenedor">
+        <img src="imagenes/5.png" alt="Herramientas Digitales">
+        <img src="imagenes/6.jpg" alt="Recursos Emocionales">
+      </div>
+    </section>
+
+    <section id="videos">
+       <h2>Videos Recomendados</h2>
+        <p>Explora contenido audiovisual creado para inspirar, relajar y fortalecer tu bienestar emocional.</p>
+  
+      <div class="video-contenedor">
+        <iframe width="420" height="240" 
+        src="https://www.youtube.com/embed/6XCcKeUW1Z0"
+        title="Video motivacional"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+      <iframe width="420" height="240" 
+        src="https://www.youtube.com/embed/DXPt-pHSt0E"
+        title="Video motivacional"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+      </div>
+    </section>
+
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>Para más información, unirse al proyecto o colaborar como adulto responsable, pueden comunicarse a través de los siguientes medios:</p>
+      <p>Email: <a href="mailto:sintonizatumemente@gmail.com">sintonizatumemente@gmail.com</a></p>
+      <p>Teléfono: <a href="tel:+573214832575">321 483 2575</a></p>
+      <p>Instagram: <a href="https://instagram.com/sintoniza_tu_mente" target="_blank">@sintoniza_tu_mente</a></p>
+      <p>También puedes acercarte al grupo de salud mental estudiantil en tu institución educativa.</p>
+      <div class="imagen-contenedor">
+        <img src="imagenes/7.webp" alt="Contáctanos">
+      </div>
+    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sintoniza tu Mente</title>
+        <!-- tu CSS y todo lo demás -->
+      </head>
+      <a"enlace"></a>
+    <footer>
+      <p>&copy; 2025 Proyecto Sintoniza tu Mente. Creado por estudiantes de grado 11.</p>
+    </footer>
+  </main>
+</body>
+</html>
